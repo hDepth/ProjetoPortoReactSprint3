@@ -1,8 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-
-// import Benefits from './pages/Benefits';
+import Beneficios from './pages/Beneficios';
 // import AddVehicle from './pages/AddVehicle';
 // import Monitoring from './pages/Monitoring';
 // import Reminders from './pages/Reminders';
@@ -19,8 +18,9 @@ const App: React.FC = () => (
     <GlobalStyles />
     <Routes>
       <Route path="/" element={<Home />} />
-      {/* <Route path="/beneficios" element={<Benefits />} />
-      <Route path="/adicionarveiculo" element={<AddVehicle />} />
+      <Route path="/beneficios" element={<Beneficios />} />
+
+      {/* <Route path="/adicionarveiculo" element={<AddVehicle />} />
       <Route path="/monitoramento" element={<Monitoring />} />
       <Route path="/lembrente" element={<Reminders />} />
       <Route path="/preventiva" element={<Preventive />} />
