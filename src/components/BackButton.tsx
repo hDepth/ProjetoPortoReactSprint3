@@ -10,7 +10,7 @@ const BackButton: React.FC<BackButtonProps> = ({ title }) => {
   const navigate = useNavigate();
   
   const handleBack = () => {
-    navigate('/home'); // Navega para o menu
+    navigate('/');
   };
 
   return (

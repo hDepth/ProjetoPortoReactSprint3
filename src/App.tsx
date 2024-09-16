@@ -17,7 +17,7 @@ const App: React.FC = () => (
   <Router>
     <GlobalStyles />
     <Routes>
-      <Route path="/home" element={<Home />} />
+      <Route path="/" element={<Home />} />
       <Route path="/beneficios" element={<Beneficios />} />
 
       {/* <Route path="/adicionarveiculo" element={<AddVehicle />} />
