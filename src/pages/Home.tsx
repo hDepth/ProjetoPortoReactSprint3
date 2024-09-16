@@ -5,6 +5,7 @@ import Box from '../components/Box';
 import Separator from '../components/Separador';
 import Footer from '../components/Footer';
 import styled from 'styled-components';
+import { useNavigate } from 'react-router-dom';
 
 
 const Line = styled.div`
@@ -18,26 +19,32 @@ const Line = styled.div`
   margin: 10px 0;
 `;
 
-const Home: React.FC = () => (
+const Home: React.FC = () => { 
+
+  const navigate = useNavigate();
+  
+  return ( 
   <>
     <Header />
     <CarroC />
     <Line>
-      <Box imageSrc="/src/assets/adcveic.png" onClick={() => window.location.href = "/adicionarveiculo"} />
-      <Box imageSrc="/src/assets/monitoramento.png" onClick={() => window.location.href = "/monitoramento"} />
-      <Box imageSrc="/src/assets/lembretes.png" onClick={() => window.location.href = "/lembrente"} />
-      <Box imageSrc="/src/assets/preventiva.png" onClick={() => window.location.href = "/preventiva"} />
-      <Box imageSrc="/src/assets/diag.png" onClick={() => window.location.href = "/diagnosticoveiculo"} />
+      <Box imageSrc="/src/assets/adcveic.png" onClick={() => navigate("/adicionarveiculo")} />
+      <Box imageSrc="/src/assets/monitoramento.png" onClick={() => navigate("/monitoramento")}  />
+      <Box imageSrc="/src/assets/lembretes.png" onClick={() => navigate("/lembretes")}  />
+      <Box imageSrc="/src/assets/preventiva.png" onClick={() => navigate("/preventiva")}  />
+      <Box imageSrc="/src/assets/diag.png" onClick={() => navigate ("/diagnosticoveiculo")} />
     </Line>
     <Separator />
     <Line>
-      <Box imageSrc="/src/assets/agend.png" onClick={() => window.location.href = "/agendamento"} />
-      <Box imageSrc="/src/assets/faq.png" onClick={() => window.location.href = "/faq"} />
-      <Box imageSrc="/src/assets/regism.png" onClick={() => window.location.href = "/registromanutencao"} />
-      <Box imageSrc="/src/assets/mecprox.png" onClick={() => window.location.href = "/mecanicaproxima"} />
+      <Box imageSrc="/src/assets/agend.png" onClick={() => navigate("/agendamento")} />
+      <Box imageSrc="/src/assets/faq.png" onClick={() => navigate("/faq")} />
+      <Box imageSrc="/src/assets/regism.png" onClick={() => navigate("/registromanutencao")} />
+      <Box imageSrc="/src/assets/mecprox.png" onClick={() => navigate("/mecanicaproxima")} />
     </Line>
     <Footer />
   </>
 );
+
+}
 
 export default Home;

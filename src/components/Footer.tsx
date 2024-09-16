@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import logo from '../assets/logoPorto.png';
+// import logo from '../assets/logoPorto.png';
 
 const FooterWrapper = styled.footer`
   width: 100%;
@@ -24,7 +24,7 @@ const FooterLink = styled.a`
 
 const Footer: React.FC = () => (
   <FooterWrapper>
-    <FooterImage src={logo} alt="" />
+    {/* <FooterImage src={logo} alt="" /> */}
     <div>
       <FooterLink href="#">Meus carros</FooterLink>
       <FooterLink href="/membros">Sobre Nós</FooterLink>

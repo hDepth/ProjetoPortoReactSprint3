@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import carroAzul from '../assets/carroazul.png';
+// import carroAzul from '../assets/carroazul.png';
 
 const SeparatorWrapper = styled.div`
   width: 100%;
@@ -30,7 +30,7 @@ const Separator: React.FC = () => (
   <SeparatorWrapper>
     <SeparatorContent>
       <BenefitsLink href="/beneficios">Ir Para Benefícios</BenefitsLink>
-      <CarroImage src={carroAzul} alt="" />
+      {/* <CarroImage src={carroAzul} alt="" /> */}
     </SeparatorContent>
   </SeparatorWrapper>
 );

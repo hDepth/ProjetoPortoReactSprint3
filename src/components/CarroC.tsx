@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import chevroletLogo from '../assets/Chevrolet-Logo.png';
+// import chevroletLogo from '/src/assets/Chevrolet-Logo.png';
 
 const CarroCWrapper = styled.div`
   width: 100%;
@@ -35,7 +35,7 @@ const H4 = styled.h4`
 const CarroC: React.FC = () => (
   <CarroCWrapper>
     <HeaderContent>
-      <CarroImage src={chevroletLogo} alt="" />
+      {/* <CarroImage src={chevroletLogo} alt="" /> */}
       <H3>ONIX</H3>
       <H4>Placa-1234</H4>
     </HeaderContent>

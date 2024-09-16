@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import logo from '../assets/logoPorto.png';
+// import logo from '../assets/logoPorto.png';
 
 const HeaderWrapper = styled.header`
   min-height: 80px;
@@ -33,7 +33,7 @@ const Seguro = styled.h1`
 
 const Header: React.FC = () => (
   <HeaderWrapper>
-    <Logo src={logo} alt="logoPorto" />
+    {/* <Logo src={logo} alt="logoPorto" /> */}
     <Title>
       <Porto>Porto</Porto>
       <Seguro>Seguro</Seguro>
